@@ -27,6 +27,23 @@ for i in range(20):
 # iterations of our loop.
 print("The sum of number 0 up untl 19 is", sum)
 
-# list1 = ["Hello", "World", "How", "Are", "You"]
-# for elem in list1:
-#     print(elem)
+# Another way of using for loops is by iterating over lists (or other iterables
+# like dictionaries, sets or tuples) in a form of "for each" loop.  To use this
+# we have to define a list first
+list1 = ["Hello", "World", 5, 6, "How", "Are", 7.9, 2.7, "You"]
+# Now we can create our loop in a similar manner to the exampel we saw above.
+# but this time instead of using the running index i we use a loop variable
+# called elem to mark the difference between a normal for loop and a for each
+# loop here. Furthermore instead of putting a range at the end of the
+# constructor we put the list we want to use here. That means elem is a variable
+# That is assigned the value "Hello" in our first iteration. After the all code
+# inside the loop is executed, the program jumps back to the top of the loop
+# and now elem is assgined the value "World". Again the code is executed and
+# afterwards the program jumps back to the top. This is repeated until elem was
+# assigned all values that were part of our list.
+for elem in list1:
+    # Here I included just simple print statements for you to see how this works
+    # First I print out the loop variable elem and than the type of the current
+    # value of elem.
+    print(elem)
+    print(type(elem))
