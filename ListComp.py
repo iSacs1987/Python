@@ -10,5 +10,5 @@ print(newlist1)
 newlist2 = [x for x in fruits if "a" in x]
 print(newlist2)
 
-newlist3 = [x.upper() for x in fruits if "a" in x]
+newlist3 = [x.upper() for x in fruits if ("a" in x and "n" not in x)]
 print(newlist3)
